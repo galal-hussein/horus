@@ -1,0 +1,18 @@
+{
+  "name": "horus-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && rm -rf dist && mkdir -p dist && cp -r public/. dist/ && esbuild src/main.ts --bundle --minify --target=es2020 --outfile=dist/app.js",
+    "dev": "rm -rf dist && mkdir -p dist && cp -r public/. dev/. dist/ && esbuild src/main.ts --bundle --sourcemap --target=es2020 --outfile=dist/app.js --servedir=dist --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "isomorphic-ws": "^5.0.0",
+    "ws": "^8.22.0"
+  }
+}

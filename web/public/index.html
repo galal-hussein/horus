@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HORUS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="screen">
+    <header class="banner">
+      <div>HORUS TERMINAL v0.1</div>
+      <div class="dim">LOCAL NETWORK INDEX</div>
+    </header>
+
+    <label class="prompt">
+      <span class="ps1">&gt;</span>
+      <span id="prompt-text"></span><span class="cursor">█</span>
+      <input id="prompt-input" autocomplete="off" spellcheck="false" autofocus aria-label="Search nodes">
+    </label>
+
+    <ul id="list" class="list" role="listbox" aria-label="Nodes"></ul>
+
+    <footer class="statusbar">
+      <span id="count">LOADING...</span>
+      <span class="hints dim">↑↓ SELECT · ENTER OPEN · CTRL+ENTER NEW TAB · ESC CLEAR</span>
+    </footer>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
