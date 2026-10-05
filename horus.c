@@ -4,13 +4,9 @@
 #include <curl/easy.h>
 #include <curl/typecheck-gcc.h>
 #include <jansson.h>
-#include <papago.h>
-#include <rattler.h>
-#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 #include <tomlc17.h>
 
 static void error(const char *msg) {
