@@ -1,5 +1,4 @@
 #include "horus.h"
-#include "librattler/rattler.h"
 
 #include <bits/time.h>
 #include <papago.h>
